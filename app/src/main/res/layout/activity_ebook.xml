@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ebook.EbookActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:id="@+id/search_text"
+        android:hint="Search here..."
+        android:drawableStart="@drawable/ic_search"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:drawablePadding="6dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ebookrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="595dp"
+        android:layout_below="@+id/search_text"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_below="@id/ebookrecycler"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+            <include layout="@layout/shimmer_for_ebook" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

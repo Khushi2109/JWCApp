@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "611355098567",
+    "firebase_url": "https://jwc-college-app.firebaseio.com",
+    "project_id": "jwc-college-app",
+    "storage_bucket": "jwc-college-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611355098567:android:04c72c72d67fc795ff6de2",
+        "android_client_info": {
+          "package_name": "rishabh.example.jwcadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611355098567-f1rmusbda73n5v5rb0r83o0i6hpqknrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB24OjwvrDoxREcf7UiulEep2R3lnWUWe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611355098567-f1rmusbda73n5v5rb0r83o0i6hpqknrj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611355098567:android:b160f37a0189f338ff6de2",
+        "android_client_info": {
+          "package_name": "rishabh.example.jwcapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611355098567-f1rmusbda73n5v5rb0r83o0i6hpqknrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB24OjwvrDoxREcf7UiulEep2R3lnWUWe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611355098567-f1rmusbda73n5v5rb0r83o0i6hpqknrj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

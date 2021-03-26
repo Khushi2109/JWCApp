@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeveloperActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/khushi"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@string/bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Designed and Developed by" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:fontFamily="@string/regular"
+        android:textSize="30sp"
+        android:textColor="@color/textColor"
+        android:text="Khushi Kumari" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@string/bold"
+        android:gravity="center"
+        android:text="Contact"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/title_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_margin"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:autoLink="phone"
+            android:fontFamily="@string/light"
+            android:text="+91 9279167309"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp"
+        android:padding="@dimen/text_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:fontFamily="@string/light"
+            android:autoLink="email"
+            android:text="khushitiwary0721@gmail.com"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@string/bold"
+            android:gravity="center"
+            android:text="Follow On"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp">
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="115dp"
+            android:src="@drawable/instagram"/>
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="-49dp"
+            android:layout_marginLeft="222dp"
+            android:src="@drawable/twitter"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/banner_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
